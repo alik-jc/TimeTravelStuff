@@ -38,3 +38,4 @@ const numRand = (minimo, maximo) => {
     return random;
 };
 */
+document.getElementById("element").innerHTML = "E!";

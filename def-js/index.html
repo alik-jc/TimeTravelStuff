@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="element">A</div>
+    <h1>Live Reload con Express y Socket.IO</h1>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // Conectar al servidor de Socket.IO
+        const socket = io();
+
+        // Escuchar el evento 'recargar' y recargar la página
+        socket.on('recargar', () => {
+            console.log('Recargando la página...');
+            window.location.reload();
+        });
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
